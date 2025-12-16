@@ -4,7 +4,7 @@
 # Written by Peter O. Martin (https://orcid.org/0009-0009-9070-9200)
 
 # Working directory
-setwd("~/Desktop/Publications/Martin et al., 2025")
+setwd("~/Desktop/Publications/Martin et al., 2026")
 
 ## Packages
 # Data formatting and combining
@@ -59,7 +59,7 @@ display.brewer.pal(n=8,"RdYlBu")
 Great_Lakes_region <- ne_states(country=c("canada","united states of america"),
                                 returnclass = "sf")
 Great_Lakes_watershed <-
-  read_sf("~/Desktop/Publications/Martin et al., 2025/Great Lakes Shapefiles/Custom Shapefiles/Full Watershed Great Lakes",
+  read_sf("~/Desktop/Publications/Martin et al., 2026/Great Lakes Shapefiles/Custom Shapefiles/Full Watershed Great Lakes",
                                  "GL_Watershed_shapefile")
 
 ######## Tables ###############################################################
