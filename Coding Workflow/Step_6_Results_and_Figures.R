@@ -517,12 +517,17 @@ Figure_2 <- ggplot(PFOS_SY_means, aes(x = Sampling.Year, y=(response))) +
   geom_jitter(data = PFOS,
               aes(x = Sampling.Year,
                   y = (PFOS)),
-              width = .2,
+              width = .2,size = 1.5,
               alpha = .2,color="black") +
   theme_classic(base_size = 14) +
   ylab("PFOS concentration (ng/g w.w.)") +
   xlab("Sampling Year (1979-2021)") +
-  coord_cartesian(ylim = c(0,310)) +
+  scale_y_continuous(breaks = c(0, 50, 100, 150, 200, 250, 300, 350), 
+                     limits = c(0,350),
+                     expand = expansion(mult = c(0, 0.02))) +
+  scale_x_continuous(breaks = c(1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015,
+                                2020),
+                     expand = expansion(mult = c(0.03, 0.01))) +
   geom_line(data = LM_spline, aes(x = x, y = y),color="#91BFDB",linewidth=1) +
   geom_line(data = LH_spline, aes(x = x, y = y),color="#FEE090",linewidth=1) +
   geom_line(data = LS_spline, aes(x = x, y = y),color="#4575B4",linewidth=1) +
@@ -532,8 +537,10 @@ Figure_2 <- ggplot(PFOS_SY_means, aes(x = Sampling.Year, y=(response))) +
                       group = factor(Waterbody,levels = WB_level_order),
                       fill=factor(Waterbody,levels = WB_level_order)),
                   shape=21,color="black",size=0.5) +
-  scale_fill_manual(values = c("#4575B4","#91BFDB","#FEE090","#FC8D59",
-                               "#D73027")) +
+  scale_fill_manual(breaks = c("Lake Ontario", "Lake Erie", "Lake Huron",
+                               "Lake Michigan", "Lake Superior"),
+                    values = c("#D73027","#FC8D59","#FEE090",
+                               "#91BFDB","#4575B4")) +
   guides(fill = guide_legend(title = "Watershed")) +
   theme(
     axis.title.x = element_text(size=14, face="bold", colour = "black"),    
@@ -625,7 +632,9 @@ Figure_3 <-
     theme_classic(base_size = 14) +
     ylab(NULL) +
     xlab("Concentration (ng/g w.w.)") +
-    coord_cartesian(xlim = c(0,210)) +
+    scale_x_continuous(breaks = c(0, 50, 100, 150, 200, 250),
+                       limits = c(0,250),
+                       expand = expansion(mult = c(0,0.02))) +
     guides(fill = guide_legend(title = "PFAS Compound")) +
     theme(legend.title=element_text(size=14,face = "bold"),
           axis.title.x = element_text(size=14, face="bold", colour = "black"),
@@ -670,14 +679,16 @@ Figure_4 <-
                   y = PFOS),
               width = .2,
               alpha = .2,
-              size = 2)+
+              size = 1.5)+
   geom_pointrange(aes(ymin = lower.CL, ymax = upper.CL),color="red",
                   alpha=1,show.legend = FALSE,
                   size = 0.8)+
   theme_classic(base_size = 14)+
-  scale_y_continuous(transform = "log10",
-                     labels = format_format(scientific=FALSE),
-                     limits = c(0.0005,5000)) +
+  scale_y_log10(breaks = c(0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000),
+                labels = label_number(drop0trailing = TRUE,
+                                      big.mark = ""),
+                expand = expansion(mult = c(0,0.02)),
+                limits = c(0.001,10000)) +
   scale_x_discrete(labels= c("PP","PC","SC","PIB","TC","QC","AP")) +
   ylab("PFOS concentration (ng/g w.w.)") +
   xlab("") +
@@ -732,6 +743,11 @@ Figure_S3<-
            stat = "summary", fun = sum,fill="transparent") +
   ylab("Sample Count") +
   xlab("Sampling Year (1979-2021)") +
+  scale_y_continuous(breaks = c(0, 50, 100, 150, 200, 250),
+                     limits = c(0,250),
+                     expand = expansion(mult = c(0,0.02))) +
+  scale_x_continuous(breaks = c(1980, 1990, 2000, 2010, 2020),
+                     expand = expansion(mult = c(0.03, 0.03))) +
   guides(fill= guide_legend(title = "Taxonomic Class")) +
   theme_bw(base_size = 14) +
   theme(legend.position = c(0.85, 0.25),
@@ -779,6 +795,11 @@ Figure_S4<-
            stat = "summary", fun = sum,fill="transparent") +
   ylab("Sample Count") +
   xlab("Sampling Year (1979-2021)") +
+  scale_y_continuous(breaks = c(0, 50, 100, 150, 200, 250),
+                     limits = c(0,250),
+                     expand = expansion(mult = c(0,0.02))) +
+  scale_x_continuous(breaks = c(1980, 1990, 2000, 2010, 2020),
+                     expand = expansion(mult = c(0.03, 0.03))) +
   guides(fill= guide_legend(title = "Trophic Level")) +
   theme_bw(base_size = 14) +
   theme(legend.position = c(0.85, 0.25),
@@ -822,16 +843,16 @@ PFOS_SY_means <- rbind(PFOS_LS_SY_means,PFOS_LM_SY_means,PFOS_LH_SY_means,
 
 # Plot results
 Figure_S5 <-
-ggplot(PFOS_SY_means, aes(x = Sampling.Year, y=(response))) +
+ggplot(PFOS_SY_means, aes(x = Sampling.Year, y=response)) +
   annotate("rect", xmin=2000, xmax=2002, ymin=0,
            ymax=Inf,
            alpha=0.5,fill="orange") +
   geom_jitter(data = PFOS,
               aes(x = Sampling.Year,
                   y = PFOS),
-              width = .2,
+              width = .2, size = 1.5,
               alpha = .2,color="black") +
-  theme_classic(base_size = 14) +
+  theme_bw(base_size = 14) +
   ylab("PFOS concentration (ng/g w.w.)") +
   xlab("Sampling Year (1979-2021)") +
   stat_spline(aes(colour = Waterbody),linewidth=1,show.legend=F) +
@@ -839,15 +860,28 @@ ggplot(PFOS_SY_means, aes(x = Sampling.Year, y=(response))) +
                       group = factor(Waterbody,levels = WB_level_order),
                       fill=factor(Waterbody,levels = WB_level_order)),
                   shape=21,color="black",size=0.5) +
-  scale_fill_manual(values = c("#4575B4","#91BFDB","#FEE090","#FC8D59",
-                               "#D73027")) +
+  # scale_fill_manual(values = c("#4575B4","#91BFDB","#FEE090","#FC8D59",
+  #                              "#D73027")) +
+  scale_fill_manual(breaks = c("Lake Ontario", "Lake Erie", "Lake Huron",
+                               "Lake Michigan", "Lake Superior"),
+                    values = c("#D73027","#FC8D59","#FEE090",
+                               "#91BFDB","#4575B4")) +
   scale_colour_manual(values = c("#FC8D59","#FEE090","#91BFDB",
                                  "#D73027","#4575B4"),) +
-  scale_y_continuous(transform = "log10",
-                     labels = format_format(scientific=FALSE),
-                     limits = c(0.01,73000)) +
+  # scale_y_continuous(transform = "log10",
+  #                    labels = format_format(scientific=FALSE),
+  #                    limits = c(0.01,73000)) +
+  scale_y_log10(breaks = c(0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000),
+                labels = label_number(drop0trailing = TRUE,
+                                      big.mark = ""),
+                expand = expansion(mult = c(0,0.02)),
+                limits = c(0.001,10000)) +
+  scale_x_continuous(breaks = c(1980, 1990, 2000, 2010, 2020),
+                     expand = expansion(mult = c(0.07, 0.03))) +
   guides(fill = guide_legend(title = "Waterbody")) +
   theme(
+    panel.grid.major = element_blank(),  # Remove major gridlines
+    panel.grid.minor = element_blank(),   # Remove minor gridlines
     axis.title.x = element_text(size=14, face="bold", colour = "black"),    
     axis.title.y = element_text(size=14, face="bold", colour = "black"),
     legend.title = element_text(size=14, face="bold", colour = "black"),
@@ -876,14 +910,16 @@ Figure_S6 <-
                   y = PFOS),
               width = .2,
               alpha = .2,
-              size = 2)+
+              size = 1.5)+
   geom_pointrange(aes(ymin = lower.CL, ymax = upper.CL),color="red",
                   alpha=1,show.legend = FALSE,
                   size = 0.8)+
   theme_classic(base_size = 14)+
-  scale_y_continuous(transform = "log10",
-                     labels = format_format(scientific=FALSE),
-                     limits = c(0.0005,5000)) +
+  scale_y_log10(breaks = c(0.001, 0.01, 0.1, 1, 10, 100, 1000, 10000),
+                labels = label_number(drop0trailing = TRUE,
+                                      big.mark = ""),
+                expand = expansion(mult = c(0,0.02)),
+                limits = c(0.001,10000)) +
   ylab("PFOS concentration (ng/g w.w.)") +
   xlab("") +
   theme(axis.title.y = element_text(size=14, face="bold", colour = "black"))
@@ -909,8 +945,11 @@ Figure_S7 <-
                   color="black") +
   scale_fill_manual(values = c("#4575B4","#91BFDB","#E0F3F8","#FEE090",
                                 "#FC8D59","#D73027")) +
-  scale_y_continuous(transform = "log10",
-                     labels = format_format(scientific=FALSE)) +
+  scale_y_log10(breaks = c(0.01, 0.1, 1, 10, 100, 1000, 10000),
+                labels = label_number(drop0trailing = TRUE,
+                                      big.mark = ""),
+                expand = expansion(mult = c(0,0.02)),
+                limits = c(0.01,10000)) +
   xlab(NULL) +
   ylab("Concentration (ng/g w.w.)") +
   guides(fill = guide_legend(title = "PFAS Compound")) +
