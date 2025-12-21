@@ -403,10 +403,10 @@ Figure_1 <-
 Figure_1
 ggsave("Tables and Figures/Figure_1.png", plot = Figure_1, 
        width = 13, height = 9, units = "in",
-       dpi = 1000)
+       dpi = 300)
 ggsave("Tables and Figures/Figure_1.jpg", plot = Figure_1, 
        width = 13, height = 9, units = "in",
-       dpi = 1000)
+       dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure 2 #############################################################
 # Code to generate a unified temporal trends plot
@@ -555,10 +555,10 @@ Figure_2 <- ggplot(PFOS_SY_means, aes(x = Sampling.Year, y=(response))) +
 Figure_2
 ggsave("Tables and Figures/Figure_2.png", plot = Figure_2, 
        width = 13, height = 8, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_2.jpg", plot = Figure_2, 
        width = 13, height = 8, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure 3 #############################################################
 # Code calculating estimated marginal means in each Great Lakes watershed for 
@@ -646,10 +646,10 @@ Figure_3 <-
 Figure_3
 ggsave("Tables and Figures/Figure_3.png", plot = Figure_3, 
        width = 13, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_3.jpg", plot = Figure_3, 
        width = 13, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure 4 #############################################################
 # Code calculating model-estimated concentrations of PFOS across the seven trophic
@@ -697,10 +697,10 @@ Figure_4 <-
 Figure_4
 ggsave("Tables and Figures/Figure_4.png", plot = Figure_4, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_4.jpg", plot = Figure_4, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure S3 #############################################################
 # Code to show sampling efforts for the various taxonomic "classes" through time
@@ -762,10 +762,10 @@ Figure_S3<-
 Figure_S3
 ggsave("Tables and Figures/Figure_S3.png", plot = Figure_S3, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_S3.jpg", plot = Figure_S3, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure S4 ############################################################
 # Code to show sampling efforts for the various trophic levels through time
@@ -815,10 +815,10 @@ Figure_S4<-
 Figure_S4
 ggsave("Tables and Figures/Figure_S4.png", plot = Figure_S4, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_S4.jpg", plot = Figure_S4, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure S5 ############################################################
 # Code to generate a multi-panel plot showing temporal trends and distributions of
@@ -894,10 +894,10 @@ ggplot(PFOS_SY_means, aes(x = Sampling.Year, y=response)) +
 Figure_S5
 ggsave("Tables and Figures/Figure_S5.png", plot = Figure_S5, 
        width = 11, height = 8, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_S5.jpg", plot = Figure_S5, 
        width = 11, height = 8, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure S6 ############################################################
 # Code to plot model-estimated concentrations (95% CI) of PFOS across the five 
@@ -927,10 +927,10 @@ Figure_S6 <-
 Figure_S6
 ggsave("Tables and Figures/Figure_S6.png", plot = Figure_S6, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_S6.jpg", plot = Figure_S6, 
        width = 10, height = 7, 
-       units = "in", dpi = 1000)
+       units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 ######## Figure S7 ############################################################
 # Code to plot model-estimated concentrations (95% CI) of the six PFAS across the five 
@@ -962,9 +962,9 @@ Figure_S7 <-
 
 Figure_S7
 ggsave("Tables and Figures/Figure_S7.png", plot = Figure_S7, width = 10, 
-       height = 7,  units = "in", dpi = 1000)
+       height = 7,  units = "in", dpi = 300)
 ggsave("Tables and Figures/Figure_S7.jpg", plot = Figure_S7, width = 10, 
-       height = 7,  units = "in", dpi = 1000)
+       height = 7,  units = "in", dpi = 300)
 # -----------------------------------------------------------------------------
 # Delete excess variables
 rm(WB_level_order,Trophic_Level_order,Sampling_Years,Class_order,
