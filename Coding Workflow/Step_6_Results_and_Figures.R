@@ -375,6 +375,44 @@ ggsave("Tables and Figures/Conceptual_Figure.jpg", plot = Conceptual_Figure,
 ######## Figure 1 #############################################################
 # Code to generate a sample distribution plot across the entire extent of the Great
 # Lakes watersheds for the samples included in this meta-analysis (n = 2,489)
+# Code to show sampling efforts for the various taxonomic "classes" through time
+# within the five watersheds of the Great Lakes
+# For simplicity, a number of taxonomic classes are merged into one group called
+# the "Invertebrates", another called the "Plantae and Algae", and another called
+# the "Reptilia and Amphibia"
+Figure_1_dataframe <- final_imputed_data
+
+for (i in 1:nrow(Figure_1_dataframe)){
+  if(Figure_1_dataframe$Class[i]=="Bivalvia"
+     || Figure_1_dataframe$Class[i]=="Annelida"
+     || Figure_1_dataframe$Class[i]=="Amphipoda"
+     || Figure_1_dataframe$Class[i]=="Gastropoda"
+     || Figure_1_dataframe$Class[i]=="Shrimp, water fleas, and allies"
+     || Figure_1_dataframe$Class[i]=="Astacoidea"
+     || Figure_1_dataframe$Class[i]=="Zooplankton"
+     || Figure_1_dataframe$Class[i]=="Insecta"
+     || Figure_1_dataframe$Class[i]=="Plantae (Magnoliopsida)"
+     || Figure_1_dataframe$Class[i]=="Algae"){
+    Figure_1_dataframe$Class[i]<-"Plantae, Algae, and Invertebrata"
+  }
+  if(Figure_1_dataframe$Class[i]=="Reptilia"
+     || Figure_1_dataframe$Class[i]=="Amphibia"){
+    Figure_1_dataframe$Class[i]<-"Reptilia and Amphibia"
+  }
+}
+
+
+# Define order of taxonomic classes
+Class_order<-c("Plantae, Algae, and Invertebrata","Reptilia and Amphibia",
+               "Pisces","Mammalia","Aves")
+Figure_1_dataframe$Class <- factor(Figure_1_dataframe$Class, levels = Class_order)
+
+levels(Figure_1_dataframe$Class) <-
+  c("Plants, Algae, and Invertebrates","Reptiles and Amphibians",
+    "Fish","Mammals","Birds")
+Figure_1_dataframe$Class
+
+
 Figure_1 <- 
   ggplot() +
   geom_sf(data=Great_Lakes_region) +
@@ -385,19 +423,25 @@ Figure_1 <-
                          style = north_arrow_nautical,width = unit(1.5, "cm"), 
                          height = unit(1.5, "cm")) +
   annotation_scale() +
-  geom_point(data=PFOS, aes(x=Longitude,y=Latitude,
-                            fill=factor(Waterbody,levels = WB_level_order)),
-             shape = 21,size=2)+
+  geom_point(data=Figure_1_dataframe, aes(x=Longitude,y=Latitude,
+                            fill=factor(Waterbody,levels = WB_level_order),
+                            shape = Class),
+             colour = "black",size=2)+
   scale_fill_manual(values = c("#4575B4","#91BFDB","#FEE090","#FC8D59",
                                "#D73027")) +
-  guides(fill= guide_legend(title = "Watershed")) +
+  scale_shape_manual(values = c(22,23,21,24,25)) +
+  guides(fill= guide_legend(title = "Watershed",override.aes = list(shape = 21)),
+         shape = guide_legend(title = "Taxonomic Group")) +
   theme_classic(base_size = 14) +
   theme(
     axis.title.x = element_text(size=14, face="bold", colour = "black"),    
     axis.title.y = element_text(size=14, face="bold", colour = "black"),
+    axis.line = element_line(colour = "black", linewidth = 0.2),
+    panel.border = element_rect(colour = "black", fill = NA, linewidth = 2),
     legend.title = element_text(size=14, face="bold", colour = "black"),
     legend.text = element_text(size=12, colour = "black"),
-    legend.position = c(.93,.888)
+    legend.position = c(.79,.88),
+    legend.box = "horizontal"
   )
 
 Figure_1
@@ -729,13 +773,19 @@ waterbody_class_sampling_df <- final_imputed_data %>%
 # Define order of taxonomic classes
 Class_order<-c("Algae","Plantae (Magnoliopsida)","Invertebrates","Amphibia",
                "Pisces","Reptilia","Mammalia","Aves")
+waterbody_class_sampling_df$Class <- factor(waterbody_class_sampling_df$Class,
+                                            levels = Class_order)
+
+levels(waterbody_class_sampling_df$Class) <-
+  c("Algae","Plants","Invertebrates","Amphibians",
+    "Fish","Reptiles","Mammals","Birds")
+waterbody_class_sampling_df$Class
 
 # Plot results in column chart format
 Figure_S3<-
   ggplot(waterbody_class_sampling_df)+ 
   geom_bar(aes(x = Sampling.Year, y = sample_count, 
-               fill = factor(Class,
-                             levels = Class_order)), 
+               fill = Class), 
            stat = "identity") +
   scale_fill_brewer(palette = "RdBu") +
   geom_bar(aes(x = Sampling.Year, y = sample_count),
@@ -748,7 +798,7 @@ Figure_S3<-
                      expand = expansion(mult = c(0,0.02))) +
   scale_x_continuous(breaks = c(1980, 1990, 2000, 2010, 2020),
                      expand = expansion(mult = c(0.03, 0.03))) +
-  guides(fill= guide_legend(title = "Taxonomic Class")) +
+  guides(fill= guide_legend(title = "Taxonomic Group")) +
   theme_bw(base_size = 14) +
   theme(legend.position = c(0.85, 0.25),
         panel.grid.major = element_blank(),  # Remove major gridlines
