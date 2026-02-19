@@ -1,0 +1,1054 @@
+{
+  "access": {
+    "embargo": {
+      "active": false,
+      "reason": null
+    },
+    "files": "public",
+    "record": "public",
+    "status": "open"
+  },
+  "created": "2026-02-18T15:33:13.885750+00:00",
+  "custom_fields": {
+    "code:codeRepository": "https://github.com/peter-o-martin/Martin-et-al.-2026",
+    "code:programmingLanguage": [
+      {
+        "id": "r",
+        "title": {
+          "en": "R"
+        }
+      },
+      {
+        "id": "rich_text_format",
+        "title": {
+          "en": "Rich Text Format"
+        }
+      }
+    ]
+  },
+  "deletion_status": {
+    "is_deleted": false,
+    "status": "P"
+  },
+  "files": {
+    "count": 1,
+    "enabled": true,
+    "entries": {
+      "peter-o-martin/Martin-et-al.-2026-v1.0.0.zip": {
+        "access": {
+          "hidden": false
+        },
+        "checksum": "md5:2f2ea91dfa8df403d2bb24942da99fce",
+        "ext": "zip",
+        "id": "0abf6513-db28-4af9-8413-3f6a89ca64e7",
+        "key": "peter-o-martin/Martin-et-al.-2026-v1.0.0.zip",
+        "links": {
+          "content": "https://zenodo.org/api/records/18683257/files/peter-o-martin/Martin-et-al.-2026-v1.0.0.zip/content",
+          "self": "https://zenodo.org/api/records/18683257/files/peter-o-martin/Martin-et-al.-2026-v1.0.0.zip"
+        },
+        "metadata": null,
+        "mimetype": "application/zip",
+        "size": 94552914,
+        "storage_class": "L"
+      }
+    },
+    "order": [],
+    "total_bytes": 94552914
+  },
+  "id": "18683257",
+  "is_draft": false,
+  "is_published": true,
+  "links": {
+    "access": "https://zenodo.org/api/records/18683257/access",
+    "access_grants": "https://zenodo.org/api/records/18683257/access/grants",
+    "access_links": "https://zenodo.org/api/records/18683257/access/links",
+    "access_request": "https://zenodo.org/api/records/18683257/access/request",
+    "access_users": "https://zenodo.org/api/records/18683257/access/users",
+    "archive": "https://zenodo.org/api/records/18683257/files-archive",
+    "archive_media": "https://zenodo.org/api/records/18683257/media-files-archive",
+    "communities": "https://zenodo.org/api/records/18683257/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/18683257/communities-suggestions",
+    "doi": "https://doi.org/10.5281/zenodo.18683257",
+    "draft": "https://zenodo.org/api/records/18683257/draft",
+    "file_modification": "https://zenodo.org/api/records/18683257/file-modification",
+    "files": "https://zenodo.org/api/records/18683257/files",
+    "latest": "https://zenodo.org/api/records/18683257/versions/latest",
+    "latest_html": "https://zenodo.org/records/18683257/latest",
+    "media_files": "https://zenodo.org/api/records/18683257/media-files",
+    "parent": "https://zenodo.org/api/records/18683256",
+    "parent_doi": "https://doi.org/10.5281/zenodo.18683256",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18683256",
+    "parent_html": "https://zenodo.org/records/18683256",
+    "preview_html": "https://zenodo.org/records/18683257?preview=1",
+    "request_deletion": "https://zenodo.org/api/records/18683257/request-deletion",
+    "requests": "https://zenodo.org/api/records/18683257/requests",
+    "reserve_doi": "https://zenodo.org/api/records/18683257/draft/pids/doi",
+    "self": "https://zenodo.org/api/records/18683257",
+    "self_doi": "https://doi.org/10.5281/zenodo.18683257",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.18683257",
+    "self_html": "https://zenodo.org/records/18683257",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:18683257/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:18683257/sequence/default",
+    "versions": "https://zenodo.org/api/records/18683257/versions"
+  },
+  "media_files": {
+    "count": 0,
+    "enabled": false,
+    "entries": {},
+    "order": [],
+    "total_bytes": 0
+  },
+  "metadata": {
+    "contributors": [
+      {
+        "affiliations": [
+          {
+            "name": "National Park Service Natural Resource Stewardship and Science Directorate"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Route",
+          "given_name": "William",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-0130-0983",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Route, William",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "01q2d8e83",
+            "identifiers": [
+              {
+                "identifier": "01q2d8e83",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.419892.f",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0004 0406 3391",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Ministry of the Environment, Conservation and Parks"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Furdui",
+          "given_name": "Vasile",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-2340-3614",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Furdui, Vasile",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Point",
+          "given_name": "Adam",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-0703-5228",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Point, Adam",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "00trqv719",
+            "identifiers": [
+              {
+                "identifier": "00trqv719",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.412750.5",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0004 1936 9166",
+                "scheme": "isni"
+              }
+            ],
+            "name": "University of Rochester Medical Center"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Hopke",
+          "given_name": "Philip",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-2367-9661",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Hopke, Philip",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Crimmins",
+          "given_name": "Bernard",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-6786-7229",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Crimmins, Bernard",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "U.S. Environmental Protection Agency Great Lakes National Program Office"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Lenell",
+          "given_name": "Brian",
+          "name": "Lenell, Brian",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Bhavsar",
+          "given_name": "Satyendra",
+          "name": "Bhavsar, Satyendra",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "05f0yaq80",
+            "identifiers": [
+              {
+                "identifier": "05f0yaq80",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.10548.38",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0004 1936 9377",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Stockholm University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Martin",
+          "given_name": "Jonathan",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-6265-4294",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Martin, Jonathan",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Coy",
+          "given_name": "Carrie O.",
+          "name": "Coy, Carrie O.",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "01r7awg59",
+            "identifiers": [
+              {
+                "identifier": "01r7awg59",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.34429.38",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0004 1936 8198",
+                "scheme": "isni"
+              }
+            ],
+            "name": "University of Guelph"
+          },
+          {
+            "id": "03dbr7087",
+            "identifiers": [
+              {
+                "identifier": "03dbr7087",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.17063.33",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0001 2157 2938",
+                "scheme": "isni"
+              }
+            ],
+            "name": "University of Toronto"
+          },
+          {
+            "name": "Environment and Climate Change Canada"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Muir",
+          "given_name": "Derek",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-6631-9776",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Muir, Derek",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "Houde",
+          "given_name": "Magali",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-5013-6529",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Houde, Magali",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "US Geological Survey Upper Midwest Environmental Sciences Center"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Custer",
+          "given_name": "Christine",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-0500-1582",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Custer, Christine",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "0190ak572",
+            "identifiers": [
+              {
+                "identifier": "0190ak572",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.137628.9",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0004 1936 8753",
+                "scheme": "isni"
+              }
+            ],
+            "name": "New York University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Kannan",
+          "given_name": "Kurunthachalam",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-1926-7456",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Kannan, Kurunthachalam",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "016czhx14",
+            "identifiers": [
+              {
+                "identifier": "016czhx14",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.264047.3",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0001 0738 3196",
+                "scheme": "isni"
+              }
+            ],
+            "name": "St. Cloud State University"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Schoenfuss",
+          "given_name": "Heiko",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-5464-992X",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Schoenfuss, Heiko",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "United States Environmental Protection Agency Research Triangle Park Campus"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Strynar",
+          "given_name": "Mark",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-3472-7921",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Strynar, Mark",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "De Silva",
+          "given_name": "Amila",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-5126-8854",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "De Silva, Amila",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Environment and Climate Change Canada"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Gewurtz",
+          "given_name": "Sarah",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-1997-1336",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Gewurtz, Sarah",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "person_or_org": {
+          "family_name": "McDaniel",
+          "given_name": "Tana",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-6733-9637",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "McDaniel, Tana",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "id": "010q4q527",
+            "identifiers": [
+              {
+                "identifier": "010q4q527",
+                "scheme": "ror"
+              },
+              {
+                "identifier": "grid.451254.3",
+                "scheme": "grid"
+              },
+              {
+                "identifier": "0000 0004 0377 1994",
+                "scheme": "isni"
+              }
+            ],
+            "name": "Government of Canada"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Letcher",
+          "given_name": "Robert",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-8232-8565",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Letcher, Robert",
+          "type": "personal"
+        },
+        "role": {
+          "id": "contactperson",
+          "title": {
+            "de": "Kontaktperson",
+            "en": "Contact person"
+          }
+        }
+      }
+    ],
+    "creators": [
+      {
+        "affiliations": [
+          {
+            "name": "Department of Biological Sciences, University of Notre Dame, Notre Dame, IN 46556, United States"
+          },
+          {
+            "name": "W.K. Kellogg Biological Station, Department of Integrative Biology, Michigan State University, Hickory Corners, MI 49060, United States"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Martin",
+          "given_name": "Peter O.L.",
+          "identifiers": [
+            {
+              "identifier": "0009-0009-9070-9200",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Martin, Peter O.L.",
+          "type": "personal"
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Department of Biological Sciences, University of Notre Dame, Notre Dame, IN 46556, United States"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Zachritz",
+          "given_name": "Alison M.",
+          "identifiers": [
+            {
+              "identifier": "0000-0001-8045-0674",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Zachritz, Alison M.",
+          "type": "personal"
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Department of Biological Sciences, University of Notre Dame, Notre Dame, IN 46556, United States"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Adey",
+          "given_name": "Amaryllis A.",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-8079-5020",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Adey, Amaryllis A.",
+          "type": "personal"
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Department of Biological Sciences, University of Notre Dame, Notre Dame, IN 46556, United States"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Klepinger",
+          "given_name": "Sarah M.",
+          "name": "Klepinger, Sarah M.",
+          "type": "personal"
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Department of Biological Sciences, University of Notre Dame, Notre Dame, IN 46556, United States"
+          },
+          {
+            "name": "US Environmental Protection Agency, Seattle, WA 98101, United States"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Conard",
+          "given_name": "Whitney M.",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-2264-9700",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Conard, Whitney M.",
+          "type": "personal"
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Department of Biological Sciences, University of Notre Dame, Notre Dame, IN 46556, United States"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Lamberti",
+          "given_name": "Gary A.",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-1261-0538",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Lamberti, Gary A.",
+          "type": "personal"
+        }
+      },
+      {
+        "affiliations": [
+          {
+            "name": "Department of Biological Sciences, University of Notre Dame, Notre Dame, IN 46556, United States"
+          }
+        ],
+        "person_or_org": {
+          "family_name": "Miranda",
+          "given_name": "Daniele A.",
+          "identifiers": [
+            {
+              "identifier": "0000-0002-5982-0172",
+              "scheme": "orcid"
+            }
+          ],
+          "name": "Miranda, Daniele A.",
+          "type": "personal"
+        }
+      }
+    ],
+    "dates": [
+      {
+        "date": "2026-02-18",
+        "type": {
+          "id": "created",
+          "title": {
+            "de": "Erstellt",
+            "en": "Created"
+          }
+        }
+      }
+    ],
+    "description": "<p>This release creates a stable, downloadable version of the GitHub Repository for <strong>Martin et al. (2026): Spatial-Temporal Patterns of Perfluoroalkyl Substances in the Biota of the Laurentian Great Lakes: A Meta-Analysis</strong>.</p>\n<p>For more information beyond what is provided in the summary below, please reference the repository's README file, found at <a href=\"https://github.com/peter-o-martin/Martin-et-al.-2026\">https://github.com/peter-o-martin/Martin-et-al.-2026</a></p>\n<div dir=\"auto\">\n<h2>Summary</h2>\n<a href=\"https://github.com/peter-o-martin/Martin-et-al.-2026#summary\"></a></div>\n<p dir=\"auto\">If you want to access the complete, finalized and imputed data frame used in modeling, the endpoint of the workflow for this meta-analysis, download <strong>Finalized_Imputed_Data_Frame.csv</strong>. You can also download <strong>Finalized_Supp_Validation_Data_Frame.csv</strong> and bind the two files together to assemble the full breadth of samples (n = 2,497) compiled by the authors. If you wish to acess the six generalized additive models reported in the publication, download the files found in the <strong>Models</strong> folder. And finally, if you wish to repeat/verify the entire workflow of this project, download the entire repository and execute the scripts in the <strong>Coding Workflow</strong> folder: as long as the setwd() line at the top of each script correctly specifies the path to the repository on your local computer, and as long as the correct version of R is installed (Version 4.4.1 &ndash; Race for Your Life), along with all the packages listed in each script (specifically the versions of those packages that were available in early July of 2024, see Main Text and Supplementary Information for more specific version information), the code should run without any errors.</p>\n<div dir=\"auto\">\n<h2>Citation Information</h2>\n<a href=\"https://github.com/peter-o-martin/Martin-et-al.-2026#citation-information\"></a></div>\n<p dir=\"auto\"><em><strong>IMPORTANT</strong></em><br>If you wish to use or adapt the code, datasets, or shapefiles found in this repository for research purposes, please cite Martin et al. (2026), this GitHub repository (Martin et al., 2026; <span lang=\"EN\"><a href=\"https://doi.org/10.5281/zenodo.18683257\">https://doi.org/10.5281/zenodo.18683257</a></span>), and the Zenodo data repository where <strong>Finalized_Imputed_Data_Frame.csv</strong> and <strong>Finalized_Supp_Validation_Data_Frame.csv</strong> have been archived and can be downloaded (Martin et al., 2025; <a href=\"https://doi.org/10.5281/zenodo.16173644\" rel=\"nofollow\">https://doi.org/10.5281/zenodo.16173644</a>). This final Zenodo archive offers additional information about the studes included in the meta-analysis and the variables that were incorporated into the two data frames.</p>",
+    "funding": [
+      {
+        "award": {
+          "number": "G20AP00004"
+        },
+        "funder": {
+          "id": "035a68863",
+          "name": "United States Geological Survey"
+        }
+      },
+      {
+        "award": {
+          "number": "NA18OAR4170082"
+        },
+        "funder": {
+          "id": "00vg14f79",
+          "name": "Illinois Indiana Sea Grant"
+        }
+      },
+      {
+        "award": {
+          "number": "2022.1980"
+        },
+        "funder": {
+          "id": "00xr9yb90",
+          "name": "Great Lakes Fishery Trust"
+        }
+      }
+    ],
+    "languages": [
+      {
+        "id": "eng",
+        "title": {
+          "en": "English"
+        }
+      }
+    ],
+    "publication_date": "2026-02-18",
+    "publisher": "Zenodo",
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/peter-o-martin/Martin-et-al.-2026/tree/v1.0.0",
+        "relation_type": {
+          "id": "issupplementto",
+          "title": {
+            "de": "Erg\u00e4nzt",
+            "en": "Is supplement to"
+          }
+        },
+        "resource_type": {
+          "id": "software",
+          "title": {
+            "de": "Software",
+            "en": "Software"
+          }
+        },
+        "scheme": "url"
+      }
+    ],
+    "resource_type": {
+      "id": "software",
+      "title": {
+        "de": "Software",
+        "en": "Software"
+      }
+    },
+    "rights": [
+      {
+        "description": {
+          "en": "The Creative Commons Attribution license allows re-distribution and re-use of a licensed work on the condition that the creator is appropriately credited."
+        },
+        "icon": "cc-by-icon",
+        "id": "cc-by-4.0",
+        "props": {
+          "scheme": "spdx",
+          "url": "https://creativecommons.org/licenses/by/4.0/legalcode"
+        },
+        "title": {
+          "en": "Creative Commons Attribution 4.0 International"
+        }
+      }
+    ],
+    "subjects": [
+      {
+        "id": "gemet:concept/2530",
+        "identifiers": [
+          {
+            "identifier": "http://www.eionet.europa.eu/gemet/concept/2530",
+            "scheme": "url"
+          }
+        ],
+        "props": {
+          "groups": [
+            "http://www.eionet.europa.eu/gemet/group/7136"
+          ],
+          "parents": "gemet:concept/7472,gemet:concept/5135,gemet:concept/8543",
+          "themes": [
+            "http://www.eionet.europa.eu/gemet/theme/30"
+          ]
+        },
+        "scheme": "GEMET",
+        "subject": "Ecotoxicology"
+      },
+      {
+        "id": "gemet:concept/3489",
+        "identifiers": [
+          {
+            "identifier": "http://www.eionet.europa.eu/gemet/concept/3489",
+            "scheme": "url"
+          }
+        ],
+        "props": {
+          "groups": [
+            "http://www.eionet.europa.eu/gemet/group/893"
+          ],
+          "parents": "gemet:concept/7472,gemet:concept/5524,gemet:concept/4805,gemet:concept/892,gemet:concept/2470,gemet:concept/2525,gemet:concept/505",
+          "themes": [
+            "http://www.eionet.europa.eu/gemet/theme/4",
+            "http://www.eionet.europa.eu/gemet/theme/40"
+          ]
+        },
+        "scheme": "GEMET",
+        "subject": "Freshwater ecosystem"
+      },
+      {
+        "subject": "Contaminant ecology"
+      },
+      {
+        "subject": "Per- and polyfluoroalkyl substances (PFAS)"
+      },
+      {
+        "subject": "Perfluorotridecanoic acid (PFTrDA)"
+      },
+      {
+        "subject": "Generalized additive models"
+      },
+      {
+        "subject": "Perfluoroalkyl acids"
+      },
+      {
+        "subject": "Birds"
+      },
+      {
+        "subject": "Freshwater fish"
+      },
+      {
+        "subject": "Food web"
+      },
+      {
+        "subject": "Biota"
+      },
+      {
+        "subject": "Perfluorododecanoic acid (PFDoA)"
+      },
+      {
+        "subject": "Perfluoroundecanoic acid (PFUnA)"
+      },
+      {
+        "subject": "Perfluorodecanoic acid (PFDA)"
+      },
+      {
+        "subject": "Perfluorononanoic acid (PFNA)"
+      },
+      {
+        "subject": "Perfluorooctanesulfonic acid (PFOS)"
+      },
+      {
+        "subject": "Laurentian Great Lakes"
+      }
+    ],
+    "title": "GitHub Repository (peter-o-martin/Martin-et-al.-2026) for Spatial-Temporal Patterns of Perfluoroalkyl Substances in the Biota of the Laurentian Great Lakes: A Meta-Analysis",
+    "version": "v1.0.0"
+  },
+  "parent": {
+    "access": {
+      "grants": [],
+      "links": [],
+      "owned_by": {
+        "user": "1368593"
+      },
+      "settings": {
+        "accept_conditions_text": null,
+        "allow_guest_requests": false,
+        "allow_user_requests": false,
+        "secret_link_expiration": 0
+      }
+    },
+    "communities": {},
+    "id": "18683256",
+    "pids": {
+      "doi": {
+        "client": "datacite",
+        "identifier": "10.5281/zenodo.18683256",
+        "provider": "datacite"
+      }
+    }
+  },
+  "pids": {
+    "doi": {
+      "client": "datacite",
+      "identifier": "10.5281/zenodo.18683257",
+      "provider": "datacite"
+    },
+    "oai": {
+      "identifier": "oai:zenodo.org:18683257",
+      "provider": "oai"
+    }
+  },
+  "revision_id": 10,
+  "stats": {
+    "all_versions": {
+      "data_volume": 0.0,
+      "downloads": 0,
+      "unique_downloads": 0,
+      "unique_views": 7,
+      "views": 25
+    },
+    "this_version": {
+      "data_volume": 0.0,
+      "downloads": 0,
+      "unique_downloads": 0,
+      "unique_views": 7,
+      "views": 25
+    }
+  },
+  "status": "published",
+  "swh": {
+    "swhid": "swh:1:dir:f615c7b9f5f674aa25c2ef2d1bf75fcfea9b26d8;origin=https://doi.org/10.5281/zenodo.18683256;visit=swh:1:snp:a14e7c65a99427728fcaeb16f76bab7f0964efcb;anchor=swh:1:rel:21c8600b88663494f91320e50f1ffd0e99307f4a;path=peter-o-martin-Martin-et-al.-2026-8243661"
+  },
+  "updated": "2026-02-19T16:53:09.691261+00:00",
+  "versions": {
+    "index": 1,
+    "is_latest": false,
+    "is_latest_draft": false
+  }
+}
