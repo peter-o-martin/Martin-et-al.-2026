@@ -36,12 +36,12 @@ If you want to access the complete, finalized and imputed data frame used in mod
 
 ## Citation Information
 ***IMPORTANT***  
-If you wish to use or adapt the code, datasets, or shapefiles found in this repository for research purposes, please cite our publication (Martin et al., 2026), this GitHub repository (Martin et al., 2026; https://doi.org/10.5281/zenodo.18683256), and the Zenodo data repository where **Finalized_Imputed_Data_Frame.csv** and **Finalized_Supp_Validation_Data_Frame.csv** have been archived and can be downloaded (Martin et al., 2025; https://doi.org/10.5281/zenodo.16173643)
+If you wish to use or adapt the code, datasets, or shapefiles found in this repository for research purposes, please cite our publication (Martin et al., 2026), version v1.0.0 of this GitHub repository (Martin et al., 2026; https://doi.org/10.5281/zenodo.18683257), and the Zenodo data repository where **Finalized_Imputed_Data_Frame.csv** and **Finalized_Supp_Validation_Data_Frame.csv** have been archived and can be downloaded (Martin et al., 2025; https://doi.org/10.5281/zenodo.16173643)
 
 The Zenodo archive also offers additional information about the studes included in this meta-analysis and the variables that were incorporated into the two data frames 
 
 ## Zenodo DOI
-[![DOI](https://zenodo.org/badge/902513263.svg)](https://doi.org/10.5281/zenodo.18683256)
+<a href="https://doi.org/10.5281/zenodo.18683257"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18683257.svg" alt="DOI"></a>
 
 ## License
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
